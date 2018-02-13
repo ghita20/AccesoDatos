@@ -16,12 +16,14 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.result.UpdateResult;
 
 import static com.mongodb.client.model.Sorts.*;
 import static com.mongodb.client.model.Filters.*;
 import static com.mongodb.client.model.Projections.*;
 import static com.mongodb.client.model.Aggregates.*;
 import static com.mongodb.client.model.Accumulators.*;
+import static com.mongodb.client.model.Updates.*;
 
 import clases.Coche;
 import clases.Conductor;
@@ -233,6 +235,16 @@ public class ClienteMongoDB {
 	}
 	
 	// ***FIN CONSULTAS***
+	
+	// Metodo que actualiza el precio de todos los coches con marca "marca" incrementandolo en "incremento" euros
+	public int incrementarPrecioCoches ( String marca , float incremento ) {
+		// Realiza la actualizacion del precio de los coches con x marca
+		UpdateResult updateResult = coleccionCoches.updateMany(
+				eq("marca",marca), 
+				inc("precio",incremento));
+		// Devuelve el numero de coches sobre los que se ha realizado la actualizacion
+		return (int) updateResult.getModifiedCount();
+	}
 	
 	
 	

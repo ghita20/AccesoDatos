@@ -74,6 +74,8 @@ public class GestionEnMemoria {
 			+"\n---------------------------"
 			+"\n 5- Conductor mas joven"
 			+"\n---------------------------"
+			+"\n 6- Incrementar precio de todos los coches"
+			+"\n---------------------------"
 			+"\n 0- Volver	\n";
 	
 
@@ -251,6 +253,23 @@ public class GestionEnMemoria {
 			break;
 		case 5: // Conductor mas joven
 			conductorMasJoven();
+			break;
+		case 6: // Incrementa el precio de todos los coches
+			String marca = Leer.pedirCadena("Marca: ");
+			float incremento = Leer.pedirFloat("Euros a incrementar: ");
+			
+			// Realiza la actualizacion
+			int numeroActualizaciones = mongoDB.incrementarPrecioCoches(marca, incremento);
+			
+			// Si se ha modificado algun registro
+			if ( numeroActualizaciones>0 ) {
+				// Mensaje
+				imprimirMensaje("Se ha incrementado el precio de " +numeroActualizaciones +" coches.");
+				// Recarga los datos en memoria ya que se han modificado en la base de datos
+				coches = mongoDB.descargarCoches();
+				conductores = mongoDB.descargarConductores(coches);
+			}else
+				imprimirMensaje("No existen coches con esa marca.");
 			break;
 		case 0: // Volver
 			return;
