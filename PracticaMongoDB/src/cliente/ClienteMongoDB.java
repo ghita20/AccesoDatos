@@ -313,7 +313,7 @@ public class ClienteMongoDB {
 	
 	
 	
-	// ***INSERCION/BORRADO/DESCARGA DE NODOS***
+	// ***INSERCION/BORRADO/DESCARGA***
 	
 	// Inserta un nuevo coche a la base de datos
 	public void insertarCoche( Coche coche) throws Exception{
@@ -441,7 +441,7 @@ public class ClienteMongoDB {
 			insertarConductor(auxC);
 	}
 	
-	// ***FIN INSERCION/BORRADO/DESCARGA DE NODOS***
+	// ***FIN INSERCION/BORRADO/DESCARGA**
 	
 
 }
