@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<registros>
+    <articulos>
+        <articulo>
+            <id>1</id>
+            <nombre>Coche</nombre>
+            <descripcion>un coche</descripcion>
+            <precio>9999.0</precio>
+            <stock>23</stock>
+        </articulo>
+    </articulos>
+</registros>

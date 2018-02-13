@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<registros>
+    <personas>
+        <persona>
+            <nombre>Santiago</nombre>
+            <apellido>Hernandez</apellido>
+            <edad>99</edad>
+            <dni>98765647U</dni>
+        </persona>
+        <persona>
+            <nombre>Susana</nombre>
+            <apellido>Veinte</apellido>
+            <edad>98</edad>
+            <dni>16273876Y</dni>
+        </persona>
+        <persona>
+            <nombre>Alejandro</nombre>
+            <apellido>Martinez</apellido>
+            <edad>34</edad>
+            <dni>98475867M</dni>
+        </persona>
+        <persona>
+            <nombre>Jose</nombre>
+            <apellido>Maria</apellido>
+            <edad>77</edad>
+            <dni>45667844R</dni>
+        </persona>
+    </personas>
+</registros>

@@ -1,0 +1,1 @@
+{ "_id" : { "$oid" : "5a8320b9f5e7f32b3ced2bd5" }, "idCoche" : 1, "marca" : "Seat", "modelo" : "Leon", "color" : "Azul", "precio" : 100.0 }

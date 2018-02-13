@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<registrosClientes>
+    <clientes>
+        <cliente>
+            <nombre>Paco</nombre>
+            <dni>dddd4</dni>
+            <telefono>34234</telefono>
+            <email>asdasd</email>
+        </cliente>
+        <cliente>
+            <nombre>Paco</nombre>
+            <dni>asdasdasd</dni>
+            <telefono>234</telefono>
+            <email>asdasda</email>
+        </cliente>
+    </clientes>
+</registrosClientes>

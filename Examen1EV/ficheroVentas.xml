@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<registros>
+    <ventas>
+        <venta>
+            <id>23</id>
+            <dni>asdasd</dni>
+        </venta>
+    </ventas>
+</registros>
